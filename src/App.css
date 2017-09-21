@@ -1,60 +1,82 @@
 .App {
+  height: 100vh;
+  width:100%;
+  /*border: solid 2px green;*/
   text-align: center;
+  position: relative;
+  /*display: flex;*/
 }
 
-.App-header {
-  /*background-color: #222;*/
-  height: 150px;
-  padding: 20px;
-  /*color: white;*/
+.body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  /*background-color: lightgrey;*/
+  flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 
 /* MAIN GRID WRAPPERS */
 .tool-bar {
-  height: 50px;
-  border: 1px solid black;
+  height: 10%;
+  /*border: 1px solid black;*/
   padding: 10px;
-  margin: 5px 0;
+  background-color: #68686E;
+  /*margin: 0.5% 0;*/
 }
 
 .main-container {
-  min-height: 100px;
-  border: 1px solid black;
+  /*min-height: 100%;*/
+  /*border: 1px solid black;*/
   padding: 10px;
-  margin: 5px 0;
+  /*margin: 0.5% 0;*/
+  position: relative;
+  /*align-items: stretch;*/
+  height: 80%;
+  display: flex;
+  background-color: #B0B1BA;
 }
 
 .footer {
-  min-height: 50px;
-  border: 1px solid black;
+  /*height: 100%;*/
+  height: 10%;
+  /*border: 1px solid black;*/
   padding: 10px;
-  margin: 5px 0;
+  background-color: #ECEDFA;
+  /*margin: 0.5% 0;*/
 }
 
 /* MAIN GRID COMPONENTS */
 .actions {
-  min-height: 300px;
-  border: 1px solid black;
+  margin: 0 5px 0 0;
+  height: 100%;
+  /*border: 1px solid;*/
+  border-radius: 3px;
   padding: 10px;
-  margin: 5px 0;
+  /*margin: 0.5% 0;*/
+  flex: 1;
+  background-color: #FFFFFF;
 }
 
 .main {
-  min-height: 300px;
-  border: 1px solid black;
+  height: 100%;
+  /*border: 1px solid black;*/
+  margin: 0 5px;
+  border-radius: 3px;
   padding: 10px;
-  margin: 5px 0;
+  /*margin: 0.5% 0;*/
+  overflow: auto;
+  flex: 3;
+  background-color: #FFFFFF;
 }
 
 .social {
-  min-height: 300px;
-  border: 1px solid black;
+  height: 100%;
+  /*border: 1px solid black;*/
+  border-radius: 3px;
   padding: 10px;
-  margin: 5px 0;
+  margin: 0 0 0 5px;
+  /*margin: 0.5% 0;*/
+  overflow: auto;
+  flex: 2;
+  background-color: #FFFFFF;
 }
